@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos e Vídeos</title>
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-size: 16px;
+        font-family: "Outfit", sans-serif;
+    }
+    /* Estilos para a navbar */
+    nav {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+    }
+
+    /* Estilos para a galeria */
+    .gallery-item {
+        float: left;
+        margin-right: 10px;
+    }
+
+    /* Estilos para o rodapé */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #888;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    body {
+        background-color: #0070F3;
+        color: #fff;
+    }
+
+    .container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos sejam quebrados em várias linhas */
+  justify-content: space-between;
+}
+
+.images, .videos {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+
+    a {
+        color: #fff;
+    }
+
+    a:hover,
+    a:active {
+        color: #eaeaea;
+    }
+
+    .images, .videos {
+        width: 48%;
+    }
+
+    @media screen and (max-width: 768px) {
+  /* Estilos para telas menores que 768px */
+  /* Por exemplo, altere a largura das imagens e vídeos */
+  .gallery-item img,
+  .gallery-item video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+  </style>
+  
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Início</a></li>
+        <li><a href="./Galeria.html">Galeria</a></li>
+        <li><a href="./biografia.html">Biografia</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+        <div class="images">
+            <!-- Imagens aqui -->
+          <div class="gallery-item">
+            <img src="./img/galeria/navio.png" style="width: 200px; height: 150px;">
+          </div>
+      
+          <div class="gallery-item">
+            <img src="./img/galeria/navio2.jpeg" style="width: 200px; height: 150px;">
+          </div>
+
+          <div class="gallery-item">
+            <img src="./img/galeria/navio.png" style="width: 200px; height: 150px;">
+          </div>
+      
+          <div class="gallery-item">
+            <img src="./img/galeria/navio2.jpeg" style="width: 200px; height: 150px;">
+          </div>
+
+          <div class="gallery-item">
+            <img src="./img/galeria/navio.png" style="width: 200px; height: 150px;">
+          </div>
+      
+          <div class="gallery-item">
+            <img src="./img/galeria/navio2.jpeg" style="width: 200px; height: 150px;">
+          </div>
+
+          <div class="gallery-item">
+            <img src="./img/galeria/caravela1.png" style="width: 200px; height: 150px;">
+          </div>
+
+          <div class="gallery-item">
+            <img src="./img/galeria/caravela2.png" style="width: 200px; height: 150px;">
+          </div>
+
+         
+        </div>
+
+        <div class="videos">
+            <!-- Vídeos aqui -->
+          <div class="gallery-item">
+            <video src="caminho-do-video.mp4" style="width: 320px; height: 240px;" controls></video>
+          </div>
+        </div>
+    </div>
+  
+    <footer>
+      <p>Feito usando inteligência artificial</p>
+    </footer>
+  </body>
+</html>
